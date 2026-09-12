@@ -1,0 +1,2 @@
+sed -i 's/fun addStudyPlan(studyPlan: StudyPlan) {/fun addStudyPlan(studyPlan: StudyPlan, onInserted: (StudyPlan) -> Unit = {}) {/g' app/src/main/java/com/example/viewmodel/StudyPlannerViewModel.kt
+sed -i 's/repository.insertStudyPlan(studyPlan)/val id = repository.insertStudyPlan(studyPlan)\n            onInserted(studyPlan.copy(id = id.toInt()))/g' app/src/main/java/com/example/viewmodel/StudyPlannerViewModel.kt

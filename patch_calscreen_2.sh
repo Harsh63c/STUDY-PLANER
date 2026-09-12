@@ -1,0 +1,2 @@
+sed -i 's/viewModel.addTask(task.title, task.startTimeMillis, task.endTimeMillis, task.reminderTimeMillis, task.dateMillis)/viewModel.addTask(task.title, task.startTimeMillis, task.endTimeMillis, task.reminderTimeMillis, task.dateMillis) { insertedTask -> scheduleTaskAlarm(context, insertedTask) }/g' app/src/main/java/com/example/ui/screens/calendar/CalendarScreen.kt
+sed -i 's/viewModel.updateTask(task)/viewModel.updateTask(task)\n                        scheduleTaskAlarm(context, task)/g' app/src/main/java/com/example/ui/screens/calendar/CalendarScreen.kt

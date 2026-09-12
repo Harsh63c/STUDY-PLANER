@@ -1,0 +1,1 @@
+sed -i 's/<uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" \/>/<uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" \/>\n    <uses-permission android:name="android.permission.USE_EXACT_ALARM" \/>/g' app/src/main/AndroidManifest.xml

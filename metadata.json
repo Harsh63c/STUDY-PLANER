@@ -1,0 +1,6 @@
+{
+  "name": "RoutineNess",
+  "description": "A productivity and study planner app with a calendar, study timer, and focus lock features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

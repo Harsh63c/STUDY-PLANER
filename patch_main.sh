@@ -1,0 +1,1 @@
+sed -i 's/import android.os.Bundle/import android.os.Bundle\nimport android.Manifest\nimport android.os.Build\nimport androidx.core.app.ActivityCompat\nimport android.content.pm.PackageManager\nimport androidx.core.content.ContextCompat/g' app/src/main/java/com/example/MainActivity.kt

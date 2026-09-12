@@ -1,0 +1,8 @@
+with open("app/src/main/java/com/example/ui/screens/studyplanner/FocusLockSetupScreen.kt", "r") as f:
+    content = f.read()
+
+content = content.replace("import androidx.compose.ui.Modifier", "import androidx.compose.ui.Modifier\nimport androidx.compose.ui.res.stringResource\nimport com.example.R")
+
+with open("app/src/main/java/com/example/ui/screens/studyplanner/FocusLockSetupScreen.kt", "w") as f:
+    f.write(content)
+
